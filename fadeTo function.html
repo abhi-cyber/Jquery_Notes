@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(jQuery).ready(function() 
+        {
+            $("#try").click(function()  // here click function meens the heading will disappear after u click it
+             {
+                $("#test").fadeTo(5000,0.3);
+            });
+
+             
+        });
+    </script>
+
+</head>
+<body>
+    <div id="test" style="background-color: black;width: 400px;height: 400px;">
+    </div>
+    <button id="try">Submit</button>
+</body>
+</html>
